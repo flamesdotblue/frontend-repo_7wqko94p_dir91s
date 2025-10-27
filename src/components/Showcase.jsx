@@ -15,6 +15,8 @@ export default function Showcase() {
   const prev = () => setIndex((p) => (p - 1 + screens.length) % screens.length);
   const next = () => setIndex((p) => (p + 1) % screens.length);
 
+  const Icon = screens[index].icon;
+
   return (
     <section id="features" className="bg-white py-20" aria-label="Showcase">
       <div className="mx-auto max-w-7xl px-6">
@@ -49,7 +51,7 @@ export default function Showcase() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="rounded-xl bg-white/80 p-3 text-gray-800 shadow">
-                      {screens[index].icon && <screens[index].icon className="h-6 w-6" />}
+                      {Icon ? <Icon className="h-6 w-6" /> : null}
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900">{screens[index].title}</h3>
                   </div>
