@@ -1,0 +1,57 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 329 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.15.117:3000/
+11:46:29 AM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/Showcase.jsx:52:54: ERROR: Expected ">" but found "["
+11:46:30 AM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Showcase.jsx:52:54: ERROR: Expected ">" but found "["
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Showcase.jsx:52:54
+  
+  Expected ">" but found "["
+  50 |                    <div className="flex items-center gap-3">
+  51 |                      <div className="rounded-xl bg-white/80 p-3 text-gray-800 shadow">
+  52 |                        {screens[index].icon && <screens[index].icon className="h-6 w-6" />}
+     |                                                        ^
+  53 |                      </div>
+  54 |                      <h3 className="text-xl font-semibold text-gray-900">{screens[index].title}</h3>
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+11:46:34 AM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Showcase.jsx:52:54: ERROR: Expected ">" but found "["
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Showcase.jsx:52:54
+  
+  Expected ">" but found "["
+  50 |                    <div className="flex items-center gap-3">
+  51 |                      <div className="rounded-xl bg-white/80 p-3 text-gray-800 shadow">
+  52 |                        {screens[index].icon && <screens[index].icon className="h-6 w-6" />}
+     |                                                        ^
+  53 |                      </div>
+  54 |                      <h3 className="text-xl font-semibold text-gray-900">{screens[index].title}</h3>
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
